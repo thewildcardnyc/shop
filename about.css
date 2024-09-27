@@ -17,6 +17,8 @@ body {
 .logo:hover{
   filter: drop-shadow(0 0 10px white);
 }
+
+
 .nav {
   display: flex; /* Align items in a row */
   gap: 10px; /* Add spacing between items */
@@ -50,6 +52,7 @@ body {
   bottom: 0;
   left: 0;
   padding: 15px;
+  text-align: left;
 }
 
 .socials a {
@@ -64,6 +67,12 @@ body {
 .socials a:hover {
   filter: drop-shadow(0 0 10px white);
 }
+
+
+.socials img{
+  width: 3%;
+}
+
 
 .copyright {
   font-family: monospace;
@@ -80,6 +89,8 @@ body {
   margin-right: 10px;
   font-size: 16px;
 }
+
+
 
 
 
