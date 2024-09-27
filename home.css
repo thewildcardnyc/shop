@@ -1,12 +1,133 @@
 body {
   background-color: #191716;
   color: white; 
-  display: flex;
-  justify-content: center;
-  align-items: flex-start; /* Align items to the top of the viewport */
-  height: 100vh; /* Full viewport height */
-  margin: 0; /* Remove margin */
-  padding: 0;
+  margin: 0;
+  padding: 20px; /* Add padding for spacing */
+  font-family: monospace;
+  text-align: center; /* Center the h1 text */
 }
 
+
+.logo img{
+  width: 20%;
+  margin-bottom: 2%;
+
+}
+
+.logo:hover{
+  filter: drop-shadow(0 0 10px white);
+}
+.nav {
+  display: flex; /* Align items in a row */
+  gap: 10px; /* Add spacing between items */
+}
+
+.top-links a {
+  color: white;
+  text-decoration: none;
+  font-family: monospace;
+  font-size: 16px;
+  position: relative;
+}
+
+.top-links a::after {
+  content: '|'; /* Adds the separator */
+  margin-left: 10px; /* Space between link and separator */
+}
+
+.top-links:last-child a::after {
+  content: ''; /* Removes the separator after the last link */
+}
+
+.top-links:hover{
+  filter: drop-shadow(0 0 10px white);
+}
+
+
+.socials {
+  font-family: monospace;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  padding: 15px;
+}
+
+.socials a {
+  display: block; /* Make each link take up a full line */
+  color: white;
+  text-decoration: none;
+  padding: 5px;
+  margin-right: 10px;
+  font-size: 16px;
+}
+
+.socials a:hover {
+  filter: drop-shadow(0 0 10px white);
+}
+
+.copyright {
+  font-family: monospace;
+  position: fixed;
+  bottom: 0;
+  right: 0;
+  padding: 15px;
+}
+
+.copyright a {
+  color: white;
+  text-decoration: none;
+  padding: 5px;
+  margin-right: 10px;
+  font-size: 16px;
+}
+
+
+
+
+
+
+
+.hamburger-menu {
+  display: flex;
+  flex-direction: column;
+  cursor: pointer;
+  padding: 10px;
+  position: fixed;
+  top: 15px;
+  right: 15px;
+  z-index: 4;
+}
+
+.bar {
+  width: 25px;
+  height: 3px;
+  background-color: white;
+  margin: 5px 0;
+}
+
+.menu {
+  font-family: monospace;
+  display: none;
+  position: fixed;
+  top: 60px; 
+  right: 0;
+  background-color: #191716;
+  padding: 15px;
+  flex-direction: column;
+  z-index: 3;
+  text-align: right; 
+
+}
+
+.menu a {
+  color: white;
+  text-decoration: none;
+  padding: 5px;
+  font-size: 16px;
+  margin: 5px 0;
+}
+
+.menu a:hover {
+  filter: drop-shadow(0 0 10px white);
+}
 
