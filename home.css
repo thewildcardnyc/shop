@@ -1,0 +1,12 @@
+body {
+  background-color: #191716;
+  color: white; 
+  display: flex;
+  justify-content: center;
+  align-items: flex-start; /* Align items to the top of the viewport */
+  height: 100vh; /* Full viewport height */
+  margin: 0; /* Remove margin */
+  padding: 0;
+}
+
+
