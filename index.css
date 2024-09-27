@@ -1,0 +1,44 @@
+body {
+  background-color: #191716;
+  color: white; 
+  display: flex;
+  justify-content: center;
+  align-items: flex-start; /* Align items to the top of the viewport */
+  height: 100vh; /* Full viewport height */
+  margin: 0; /* Remove margin */
+  padding: 0;
+}
+
+.background {
+background-image: url('images/background.jpg'); /* Replace with your image URL */
+background-size: cover; /* Ensure the image covers the full screen */
+background-position: center; /* Center the image */
+background-repeat: no-repeat; /* Prevent image repetition */
+width: 100vw; /* Full width of the viewport */
+height: 100vh; /* Full height of the viewport */
+position: absolute; /* Ensure background stays behind the logo */
+top: 0;
+left: 0;
+z-index: 1; /* Lower z-index for background */
+} 
+
+/* Logo container */
+.logo {
+display: flex;
+justify-content: center;
+margin-top: 15%; /* Adjust this to control how far from the top */
+z-index: 10; /* Higher z-index to place on top of the background */
+position: relative;
+}
+
+/* Logo image */
+.logo img {
+width: 600px; /* Adjust logo size */
+height: auto;
+}
+
+/* Add glow effect on hover */
+.logo:hover img {
+filter: drop-shadow(0 0 10px white);
+transition: filter 0.3s ease-in-out;
+}
