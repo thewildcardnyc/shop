@@ -1,0 +1,73 @@
+body {
+  background-color: #191716;
+  color: white; 
+  margin: 0;
+  padding: 20px; /* Add padding for spacing */
+  font-family: monospace;
+  text-align: center; /* Center the h1 text */
+}
+
+h1 {
+  margin-bottom: 20px; /* Add space between the h1 and the grid */
+}
+
+
+h2{
+  text-align: left;
+  font-style: italic;
+}
+
+.collection{
+  width: 70%; /* Grid width set to 70% of the screen */
+  margin: 0 auto; /* Center the grid within its parent (body) */
+}
+
+
+
+.new-york {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); /* 3 columns */
+  gap: 20px; /* Space between grid items */
+
+}
+
+.ny-item {
+  position: relative;
+  overflow: hidden;
+  aspect-ratio: 1; /* Ensures grid items are square */
+  
+}
+
+
+.ny-item:hover{
+  filter: drop-shadow(0 0 10px white);
+}
+
+.ny-item img {
+  width: 100%; /* Responsive image */
+  height: 100%; /* Cover the item */
+  object-fit: cover; /* Maintain aspect ratio */
+}
+
+
+.cold-water {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); /* 3 columns */
+  gap: 20px; /* Space between grid items */
+}
+
+
+.cold-item {
+  position: relative; /* Position for absolute elements inside */
+  overflow: hidden; /* Hide overflow */
+}
+
+.cold-item img {
+  width: 100%; /* Responsive image */
+  height: 100%; /* Cover the item */
+  object-fit: cover; /* Maintain aspect ratio */
+}
+
+.cold-item:hover{
+  filter: drop-shadow(0 0 10px white);
+}
