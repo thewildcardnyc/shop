@@ -13,7 +13,7 @@ body {
 }
 
 .logo:hover{
-  filter: drop-shadow(0 0 10px white);
+  filter: drop-shadow(0 0 10px #7190ba);
 }
 
 
@@ -53,7 +53,7 @@ h2{
 
 
 .ny-item:hover{
-  filter: drop-shadow(0 0 10px white);
+  filter: drop-shadow(0 0 10px #7190ba);
 }
 
 .ny-item img {
@@ -82,7 +82,7 @@ h2{
 }
 
 .cold-item:hover{
-  filter: drop-shadow(0 0 10px white);
+  filter: drop-shadow(0 0 10px #7190ba);
 }
 
 
