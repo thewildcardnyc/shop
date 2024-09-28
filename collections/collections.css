@@ -20,30 +20,11 @@ body {
 
 
 h1 {
+  margin-left: 15%;
   margin-bottom: 20px; /* Add space between the h1 and the grid */
   font-size: 40px;
   text-align: left;
   font-size: 50px;
-}
-
-
-.product {
-  text-align: left; 
-  padding: 20px;
-}
-
-
-.item-img{
-  margin-bottom: 5%;
-  width: 70%; /* Makes the image responsive, adjusts based on container */
-
-}
-
-.item-img img {
-  width: 100%; /* Makes the image responsive, adjusts based on container */
-  max-width: 30%; /* Maximum size for the image */
-  height: auto; /* Maintains the aspect ratio */
-  transition: transform 0.3s ease; /* Smooth hover effect */
 }
 
 
@@ -124,13 +105,11 @@ h1 {
 
 
 
-.collection{
-  width: 70%; /* Grid width set to 70% of the screen */
-  margin: 0 auto; /* Center the grid within its parent (body) */
-}
+
 
 
 .new-york {
+  margin-left: 15%;
   width: 70%;
   display: grid;
   grid-template-columns: repeat(3, 1fr); /* 3 columns */
@@ -181,6 +160,7 @@ h1 {
 
 
 .cold-water {
+  margin-left: 15%;
   width: 70%;
   display: grid;
   grid-template-columns: repeat(3, 1fr); /* 3 columns */
@@ -230,7 +210,8 @@ h1 {
 
 
 .f2024 {
-  width: 80%;
+  margin-left: 15%;
+  width: 68%;
   display: grid;
   grid-template-columns: repeat(4, 1fr); /* 3 columns */
 }
@@ -277,6 +258,7 @@ h1 {
 
 
 .banner{
+  margin-left: 15%;
   text-align: left;
 }
 .banner img{
@@ -284,6 +266,7 @@ h1 {
 }
 
 .chart{
+  margin-left: 15%;
   font-size: 2vh;
   text-align: left;
   margin-bottom: 15%;
@@ -326,6 +309,10 @@ h1 {
   .copyright a {
     font-size: 10px; /* Decrease font size for copyright links */
   }
+
+  .chart{
+    grid-template-columns: 1fr; /* Change to a single column */
+  }
 }
 
 /* Tablets (481px to 768px) */
@@ -336,7 +323,6 @@ h1 {
 
   h1 {
     font-size: 40px; /* Moderate h1 font size */
-    text-align: center; /* Center h1 text */
   }
 
   .top-links a {
