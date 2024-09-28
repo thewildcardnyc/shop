@@ -103,6 +103,7 @@ h1 {
 
 
 
+
 /* Mobile Devices (up to 480px) */
 @media (max-width: 480px) {
 
@@ -134,7 +135,11 @@ h1 {
 /* Tablets (481px to 768px) */
 @media (min-width: 481px) and (max-width: 768px) {
   .logo img {
-    width: 80%; /* Moderate size for tablets */
+    width: 50%; /* Moderate size for tablets */
+  }
+
+  .items img{
+    width: 50%;
   }
 
   h1 {
