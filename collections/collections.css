@@ -180,3 +180,46 @@ h1 {
 }
 
 
+
+.f2024 {
+  width: 80%;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr); /* 3 columns */
+  gap: 20px; /* Space between grid items */
+}
+
+
+.f2024-item {
+  position: relative; /* Position for absolute elements inside */
+  overflow: hidden; /* Hide overflow */
+}
+
+.f2024-item img {
+  width: 100%; /* Responsive image */
+  height: 100%; /* Cover the item */
+  object-fit: cover; /* Maintain aspect ratio */
+}
+
+.f2024-item:hover{
+  filter: drop-shadow(0 0 10px #7190ba);
+}
+
+.banner{
+  text-align: left;
+}
+.banner img{
+  width: 80%;
+}
+
+.chart{
+  font-size: 2vh;
+  text-align: left;
+  margin-bottom: 15%;
+  margin-top: 5%;
+  display: grid;
+  grid-template-columns: 1fr 1fr; /* Two equal-width columns */
+}
+
+.chart img{
+  width: 70%;
+}
