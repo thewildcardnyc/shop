@@ -186,6 +186,11 @@ h1 {
     font-size: 15px; /* Moderate font size for social links */
   }
 
+  .grid {
+    grid-template-columns: 1fr; /* Change to a single column */
+  }
+
+
   .copyright a {
     font-size: 15px; /* Moderate font size for copyright links */
   }
