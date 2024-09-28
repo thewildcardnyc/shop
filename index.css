@@ -1,44 +1,104 @@
 body {
   background-color: #052047;
   color: white; 
-  display: flex;
-  justify-content: center;
-  align-items: flex-start; /* Align items to the top of the viewport */
-  height: 100vh; /* Full viewport height */
-  margin: 0; /* Remove margin */
-  padding: 0;
+  margin: 0;
+  padding: 20px; /* Add padding for spacing */
+  font-family: monospace;
+  text-align: center; /* Center the h1 text */
 }
 
-.background {
-background-image: url('images/background.jpg'); /* Replace with your image URL */
-background-size: cover; /* Ensure the image covers the full screen */
-background-position: center; /* Center the image */
-background-repeat: no-repeat; /* Prevent image repetition */
-width: 100vw; /* Full width of the viewport */
-height: 100vh; /* Full height of the viewport */
-position: absolute; /* Ensure background stays behind the logo */
-top: 0;
-left: 0;
-z-index: 1; /* Lower z-index for background */
-} 
 
-/* Logo container */
-.logo {
-display: flex;
-justify-content: center;
-margin-top: 15%; /* Adjust this to control how far from the top */
-z-index: 10; /* Higher z-index to place on top of the background */
-position: relative;
+.logo img{
+  width: 40%;
+  margin-bottom: 2%;
+  margin-top: 10%;
+
 }
 
-/* Logo image */
-.logo img {
-width: 600px; /* Adjust logo size */
-height: auto;
+.logo:hover{
+  filter: drop-shadow(0 0 10px white);
 }
 
-/* Add glow effect on hover */
-.logo:hover img {
-filter: drop-shadow(0 0 10px white);
-transition: filter 0.3s ease-in-out;
+h1 {
+  margin-bottom: 20px; /* Add space between the h1 and the grid */
+  font-size: 40px;
+  text-align: left;
+  font-size: 50px;
 }
+
+
+.nav {
+  display: flex; /* Align items in a row */
+  gap: 10px; /* Add spacing between items */
+}
+
+.top-links a {
+  color: white;
+  text-decoration: none;
+  font-family: monospace;
+  font-size: 16px;
+  position: relative;
+}
+
+.top-links a::after {
+  content: '|'; /* Adds the separator */
+  margin-left: 10px; /* Space between link and separator */
+}
+
+.top-links:last-child a::after {
+  content: ''; /* Removes the separator after the last link */
+}
+
+.top-links:hover{
+  filter: drop-shadow(0 0 10px white);
+}
+
+
+.socials {
+  font-family: monospace;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  padding: 15px;
+  text-align: left;
+}
+
+.socials a {
+  display: block; /* Make each link take up a full line */
+  color: white;
+  text-decoration: none;
+  padding: 5px;
+  margin-right: 10px;
+  font-size: 16px;
+}
+
+.socials a:hover {
+  filter: drop-shadow(0 0 10px white);
+}
+
+
+.socials img{
+  width: 3%;
+}
+
+
+.copyright {
+  font-family: monospace;
+  position: fixed;
+  bottom: 0;
+  right: 0;
+  padding: 15px;
+}
+
+.copyright a {
+  color: white;
+  text-decoration: none;
+  padding: 5px;
+  margin-right: 10px;
+  font-size: 16px;
+}
+
+
+
+
+
