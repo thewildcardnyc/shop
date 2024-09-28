@@ -114,6 +114,7 @@ h1 {
 .video-background video {
   min-width: 100%; /* Ensure video covers the entire background */
   min-height: 100%;
+  object-fit: cover; /* Cover the entire container without distortion */
 }
 
 
