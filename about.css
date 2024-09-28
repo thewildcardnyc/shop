@@ -154,8 +154,10 @@ h1 {
     grid-template-columns: 1fr; /* Change to a single column */
   }
 
-  .items {
-    width: 90%; /* Optional: increase width for better use of space */
+  .items{
+    margin-left: 12%; /* Center the grid within its parent (body) */
+    width: 70%;
+    text-align: left;
   }
 
   .about {
