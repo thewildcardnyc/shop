@@ -26,6 +26,16 @@ h1 {
 }
 
 
+.items{
+  width: 70%; /* Grid width set to 70% of the screen */
+  margin: 0 auto; /* Center the grid within its parent (body) */
+  text-align: left;
+}
+
+.items p{
+  width: 40%;
+}
+
 .nav {
   display: flex; /* Align items in a row */
   gap: 10px; /* Add spacing between items */
