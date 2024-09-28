@@ -127,6 +127,10 @@ h1 {
     width: 80%; /* Increase logo size for smaller screens */
   }
 
+  .items img{
+    width: 70%;
+  }
+
   h1 {
     font-size: 30px; /* Decrease h1 font size */
   }
