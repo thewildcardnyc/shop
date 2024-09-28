@@ -143,6 +143,18 @@ h1 {
     font-size: 14px; /* Decrease font size for top links */
   }
 
+  .grid {
+    grid-template-columns: 1fr; /* Change to a single column */
+  }
+
+  .items {
+    width: 90%; /* Optional: increase width for better use of space */
+  }
+
+  .about {
+    margin-top: 10%; /* Optional: adjust margin for small screens */
+  }
+
   .socials a {
     font-size: 10px; /* Decrease font size for social links */
   }
