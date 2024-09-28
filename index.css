@@ -102,3 +102,55 @@ h1 {
 
 
 
+
+/* Mobile Devices (up to 480px) */
+@media (max-width: 480px) {
+
+  .logo{
+    margin-top: 10%;
+  }
+
+  .logo img {
+    width: 80%; /* Increase logo size for smaller screens */
+  }
+
+  h1 {
+    font-size: 30px; /* Decrease h1 font size */
+  }
+
+  .top-links a {
+    font-size: 14px; /* Decrease font size for top links */
+  }
+
+  .socials a {
+    font-size: 10px; /* Decrease font size for social links */
+  }
+
+  .copyright a {
+    font-size: 10px; /* Decrease font size for copyright links */
+  }
+}
+
+/* Tablets (481px to 768px) */
+@media (min-width: 481px) and (max-width: 768px) {
+  .logo img {
+    width: 80%; /* Moderate size for tablets */
+  }
+
+  h1 {
+    font-size: 40px; /* Moderate h1 font size */
+    text-align: center; /* Center h1 text */
+  }
+
+  .top-links a {
+    font-size: 15px; /* Moderate font size for top links */
+  }
+
+  .socials a {
+    font-size: 15px; /* Moderate font size for social links */
+  }
+
+  .copyright a {
+    font-size: 15px; /* Moderate font size for copyright links */
+  }
+}
