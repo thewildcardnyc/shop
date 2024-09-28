@@ -38,16 +38,12 @@ h2{
 
 
 .new-york {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr); /* 3 columns */
-  gap: 20px; /* Space between grid items */
-
+  width: 100%;
 }
 
 .ny-item {
   position: relative;
   overflow: hidden;
-  aspect-ratio: 1; /* Ensures grid items are square */
   
 }
 
@@ -64,9 +60,7 @@ h2{
 
 
 .cold-water {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr); /* 3 columns */
-  gap: 20px; /* Space between grid items */
+  width: 100%;
 }
 
 
