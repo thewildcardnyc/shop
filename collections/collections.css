@@ -35,6 +35,8 @@ h1 {
 
 .item-img{
   margin-bottom: 5%;
+  width: 70%; /* Makes the image responsive, adjusts based on container */
+
 }
 
 .item-img img {
