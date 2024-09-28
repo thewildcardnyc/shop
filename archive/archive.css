@@ -1,5 +1,5 @@
 body {
-  background-color: #191716;
+  background-color: #052047;
   color: white; 
   margin: 0;
   padding: 20px; /* Add padding for spacing */
@@ -23,6 +23,7 @@ h1 {
   font-size: 40px;
   text-align: left;
   font-size: 50px;
+  margin-left: 15%; /* Grid width set to 70% of the screen */
 }
 
 
@@ -101,69 +102,63 @@ h1 {
 
 /* Slideshow container */
 .slideshow-container {
-  position: relative;
   max-width: 100%;
-  margin: auto;
-  overflow: hidden;
+  position: fixed;
+  padding-bottom: 20px;
 }
 
-/* Hide radio buttons */
-input[type="radio"] {
+
+
+/* Slides */
+.mySlides {
   display: none;
 }
 
-/* Individual slide styling */
-.slide {
-  display: none;
-  position: absolute;
-  width: 100%;
-  top: 0;
-  left: 0;
+/* Slideshow images */
+.mySlides img {
+  width: 45%;
+  height: auto;
 }
 
-/* Show the checked slide */
-input:checked + .slide {
-  display: block;
-}
-
-/* Images */
-.slide img {
-  width: 100%;
-  border-radius: 10px; /* Optional */
-}
-
-/* Arrows */
+/* Previous button */
 .prev, .next {
-  position: absolute;
-  top: 50%;
-  padding: 16px;
-  font-size: 24px;
-  color: white;
-  background-color: rgba(0, 0, 0, 0.5);
   cursor: pointer;
-  border-radius: 50%;
+  position: fixed;
+  top: 60%;
+  width: auto;
+  padding: 16px;
+  margin-top: -22px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
   user-select: none;
-  transform: translateY(-50%);
 }
 
+/* Positioning arrows */
 .prev {
-  left: 10px;
+  padding-left: 15%;
+  left: 0;
+  border-radius: 3px 0 0 3px;
 }
 
 .next {
-  right: 10px;
+  padding-right: 15%;
+  right: 0;
+  border-radius: 0 3px 3px 0;
 }
 
+/* On hover, add a grey background color to the arrows */
 .prev:hover, .next:hover {
-  background-color: rgba(0, 0, 0, 0.8);
+  filter: drop-shadow(0 0 10px white);
 }
 
-/* Animation */
-.slide {
-  animation: fade 1s ease;
-}
 
-@keyframes fade {
-  from { opacity: 0; }
-  to { opacity: 1; }
+.first-slide, .last-slide {
+  width: 50%;
+  display: flex; /* Use flexbox to center the content */
+  justify-content: center; /* Center horizontally */
+  align-items: center; /* Center vertically */
+  margin: auto; /* Optional: center the container itself */
 }
