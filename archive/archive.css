@@ -193,6 +193,17 @@ h1 {
   .copyright a {
     font-size: 10px; /* Decrease font size for copyright links */
   }
+
+.mySlides img {
+  margin-left: -5%;
+  width: 65%;
+  height: auto;
+}
+
+.first-slide, .last-slide {
+  width: 50%;
+
+
 }
 
 /* Tablets (481px to 768px) */
