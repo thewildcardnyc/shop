@@ -17,6 +17,15 @@ body {
 .logo:hover{
   filter: drop-shadow(0 0 10px white);
 }
+
+h1 {
+  margin-bottom: 20px; /* Add space between the h1 and the grid */
+  font-size: 40px;
+  text-align: left;
+  font-size: 50px;
+}
+
+
 .nav {
   display: flex; /* Align items in a row */
   gap: 10px; /* Add spacing between items */
