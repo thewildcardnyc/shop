@@ -128,32 +128,54 @@ h1 {
 }
 
 
-
 .new-york {
   width: 70%;
   display: grid;
   grid-template-columns: repeat(3, 1fr); /* 3 columns */
   gap: 20px; /* Space between grid items */
-
 }
 
 .ny-item {
   position: relative;
   overflow: hidden;
   aspect-ratio: 1; /* Ensures grid items are square */
-  
-}
-
-
-.ny-item:hover{
-  filter: drop-shadow(0 0 10px #7190ba);
 }
 
 .ny-item img {
-  width: 100%; /* Responsive image */
-  height: 100%; /* Cover the item */
-  object-fit: cover; /* Maintain aspect ratio */
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: opacity 0.3s ease; /* Smooth opacity transition */
 }
+
+.ny-item .overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(#013d92); /* Semi-transparent black background */
+  color: white;
+  display: flex; /* Enable flexbox */
+  justify-content: center; /* Horizontally center the text */
+  align-items: center; /* Vertically center the text */
+  opacity: 0; /* Hidden by default */
+  transition: opacity 0.3s ease; /* Smooth transition */
+  font-family: monospace;
+  font-size: 12px;
+  text-align: center; /* Center text alignment */
+  padding: 20px;
+}
+
+.ny-item:hover img {
+  opacity: 0.5; /* Lower opacity on hover */
+}
+
+.ny-item:hover .overlay {
+  opacity: 1; /* Show the text description on hover */
+}
+
+
 
 
 .cold-water {
@@ -163,20 +185,44 @@ h1 {
   gap: 20px; /* Space between grid items */
 }
 
-
 .cold-item {
-  position: relative; /* Position for absolute elements inside */
-  overflow: hidden; /* Hide overflow */
+  position: relative;
+  overflow: hidden;
+  aspect-ratio: 1; /* Ensures grid items are square */
 }
 
 .cold-item img {
-  width: 100%; /* Responsive image */
-  height: 100%; /* Cover the item */
-  object-fit: cover; /* Maintain aspect ratio */
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: opacity 0.3s ease; /* Smooth opacity transition */
 }
 
-.cold-item:hover{
-  filter: drop-shadow(0 0 10px #7190ba);
+.cold-item .overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(#013d92); /* Semi-transparent black background */
+  color: white;
+  display: flex; /* Enable flexbox */
+  justify-content: center; /* Horizontally center the text */
+  align-items: center; /* Vertically center the text */
+  opacity: 0; /* Hidden by default */
+  transition: opacity 0.3s ease; /* Smooth transition */
+  font-family: monospace;
+  font-size: 12px;
+  text-align: center; /* Center text alignment */
+  padding: 20px;
+}
+
+.cold-item:hover img {
+  opacity: 0.5; /* Lower opacity on hover */
+}
+
+.cold-item:hover .overlay {
+  opacity: 1; /* Show the text description on hover */
 }
 
 
@@ -200,9 +246,34 @@ h1 {
   object-fit: cover; /* Maintain aspect ratio */
 }
 
-.f2024-item:hover{
-  filter: drop-shadow(0 0 10px #7190ba);
+
+.f2024 .overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(#013d92); /* Semi-transparent black background */
+  color: white;
+  display: flex; /* Enable flexbox */
+  justify-content: center; /* Horizontally center the text */
+  align-items: center; /* Vertically center the text */
+  opacity: 0; /* Hidden by default */
+  transition: opacity 0.3s ease; /* Smooth transition */
+  font-family: monospace;
+  font-size: 12px;
+  text-align: center; /* Center text alignment */
+  padding: 20px;
 }
+
+.f2024-item:hover img {
+  opacity: 0.5; /* Lower opacity on hover */
+}
+
+.f2024-item:hover .overlay {
+  opacity: 1; /* Show the text description on hover */
+}
+
 
 .banner{
   text-align: left;
