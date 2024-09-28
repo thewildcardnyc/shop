@@ -21,16 +21,23 @@ body {
 h1 {
   margin-bottom: 20px; /* Add space between the h1 and the grid */
   font-size: 40px;
-  text-align: left;
   font-size: 50px;
 }
 
 
 .items{
+  text-align: left;
   width: 70%; /* Grid width set to 70% of the screen */
   margin: 0 auto; /* Center the grid within its parent (body) */
 }
 
+.items img{
+  width: 40%;
+}
+
+.items img:hover{
+  filter: drop-shadow(0 0 10px white);
+}
 
 .nav {
   display: flex; /* Align items in a row */
