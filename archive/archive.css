@@ -99,76 +99,71 @@ h1 {
 
 
 
-
-
 /* Slideshow container */
 .slideshow-container {
   position: relative;
   max-width: 100%;
   margin: auto;
+  overflow: hidden;
 }
 
-/* Hide slides by default */
-.mySlides {
+/* Hide radio buttons */
+input[type="radio"] {
   display: none;
 }
 
-/* Image styles */
-.mySlides img {
+/* Individual slide styling */
+.slide {
+  display: none;
+  position: absolute;
   width: 100%;
-  border-radius: 10px; /* Optional styling */
+  top: 0;
+  left: 0;
 }
 
-/* Fade animation */
-.fade {
-  animation-name: fade;
-  animation-duration: 1.5s;
+/* Show the checked slide */
+input:checked + .slide {
+  display: block;
 }
 
-@keyframes fade {
-  from {opacity: .4} 
-  to {opacity: 1}
+/* Images */
+.slide img {
+  width: 100%;
+  border-radius: 10px; /* Optional */
 }
 
 /* Arrows */
 .prev, .next {
-  cursor: pointer;
   position: absolute;
   top: 50%;
-  width: auto;
   padding: 16px;
-  margin-top: -22px;
+  font-size: 24px;
   color: white;
-  font-weight: bold;
-  font-size: 18px;
-  transition: 0.6s ease;
-  border-radius: 0 3px 3px 0;
-  user-select: none;
-}
-
-/* Position the "next" button to the right */
-.next {
-  right: 0;
-  border-radius: 3px 0 0 3px;
-}
-
-/* On hover, add background color to arrows */
-.prev:hover, .next:hover {
-  background-color: rgba(0,0,0,0.8);
-}
-
-/* Dot navigation (optional) */
-.dot {
+  background-color: rgba(0, 0, 0, 0.5);
   cursor: pointer;
-  height: 15px;
-  width: 15px;
-  margin: 0 2px;
-  background-color: #bbb;
   border-radius: 50%;
-  display: inline-block;
-  transition: background-color 0.6s ease;
+  user-select: none;
+  transform: translateY(-50%);
 }
 
-.active, .dot:hover {
-  background-color: #717171;
+.prev {
+  left: 10px;
+}
+
+.next {
+  right: 10px;
+}
+
+.prev:hover, .next:hover {
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+/* Animation */
+.slide {
+  animation: fade 1s ease;
+}
+
+@keyframes fade {
+  from { opacity: 0; }
+  to { opacity: 1; }
 }
