@@ -11,7 +11,7 @@ body {
 .logo img{
   width: 20%;
   margin-bottom: 2%;
-
+  margin-top: 2%;
 }
 
 .logo:hover{
@@ -24,7 +24,6 @@ h1 {
   text-align: left;
   font-size: 50px;
 }
-
 
 
 
@@ -106,8 +105,8 @@ h1 {
 
 
 .items{
-  width: 70%; /* Grid width set to 70% of the screen */
-  margin: 0 auto; /* Center the grid within its parent (body) */
+  width: 60%; /* Grid width set to 70% of the screen */
+  margin-left: 30%; /* Center the grid within its parent (body) */
   text-align: left;
 }
 
