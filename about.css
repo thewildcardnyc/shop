@@ -1,8 +1,9 @@
 body {
   background-image: url('images/background.jpg'); /* Replace with the actual path to your background image */
-  background-size: cover; /* Ensure the background image covers the entire screen */
+  background-size: 100vw 100vh; /* Set the background image to always cover the viewport */
   background-position: center; /* Center the image */
   background-repeat: no-repeat; /* Prevent image tiling */
+  background-attachment: fixed; /* Make the background fixed on scroll */
   color: white; 
   margin: 0;
   padding: 20px; /* Add padding for spacing */
