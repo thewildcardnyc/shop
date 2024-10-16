@@ -1,4 +1,8 @@
 body {
+  background-image: url('images/background.jpg'); /* Replace with the actual path to your background image */
+  background-size: cover; /* Ensure the background image covers the entire screen */
+  background-position: center; /* Center the image */
+  background-repeat: no-repeat; /* Prevent image tiling */
   background-color: #0d1c33;
   color: white; 
   margin: 0;
