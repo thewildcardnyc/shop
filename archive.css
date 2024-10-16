@@ -5,6 +5,7 @@ body {
   background-repeat: no-repeat; /* Prevent image tiling */
   background-attachment: fixed; /* Make the background fixed on scroll */
   color: white; 
+  background-color:#052047;
   margin: 0;
   padding: 20px; /* Add padding for spacing */
   font-family: monospace;
