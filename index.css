@@ -9,6 +9,7 @@ body {
   justify-content: center; /* Center horizontally */
   align-items: center; /* Center vertically */
   height: 100vh; /* Ensure the body takes the */
+  overflow: hidden; /* Prevent scrolling */
 }
 
 
@@ -19,7 +20,8 @@ body {
 
 .logo img{
   width: 40%;
-
+  margin-top: -1%;
+  margin-bottom: 1%;
 }
 
 .logo:hover{
