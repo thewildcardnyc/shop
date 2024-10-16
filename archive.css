@@ -1,5 +1,8 @@
 body {
-  background-color: #0d1c33;
+  background-image: url('images/background.jpg'); /* Replace with the actual path to your background image */
+  background-size: cover; /* Ensure the background image covers the entire screen */
+  background-position: center; /* Center the image */
+  background-repeat: no-repeat; /* Prevent image tiling */
   color: white; 
   margin: 0;
   padding: 20px; /* Add padding for spacing */
@@ -48,7 +51,7 @@ h1 {
   color: white;
   text-decoration: none;
   font-family: monospace;
-  font-size: 16px;
+  font-size: 25px;
   position: relative;
 }
 
@@ -61,9 +64,47 @@ h1 {
   content: ''; /* Removes the separator after the last link */
 }
 
+.top-links .dropdown a::after {
+  content: ''; /* No separator for dropdown links */
+}
+
 .top-links:hover{
   filter: drop-shadow(0 0 10px white);
 }
+
+.top-links a:hover{
+  color: #052047;
+}
+
+ /* Styling for the dropdown menu */
+ .dropdown {
+  padding-top: 20px;
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  z-index: 1;
+  text-align: left;
+}
+
+.dropdown a {
+  padding-top: 5px;
+  color: rgb(255, 255, 255);
+  display: block;
+  /* padding: 10px; */
+  white-space: nowrap;
+  font-size: 20px;
+  text-decoration: none; /* Ensure underline doesn't appear on hover */
+}
+
+/* Show the dropdown menu on hover */
+.top-links:hover .dropdown {
+  display: block;
+}
+
+
+
+/* Optional: some hover effects for dropdown links */
 
 
 .socials {
@@ -86,6 +127,7 @@ h1 {
 
 .socials a:hover {
   filter: drop-shadow(0 0 10px white);
+  color: #052047;
 }
 
 

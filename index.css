@@ -5,13 +5,20 @@ body {
   padding: 20px; /* Add padding for spacing */
   font-family: monospace;
   text-align: center; /* Center the h1 text */
+  display: flex; /* Make the body a flex container */
+  justify-content: center; /* Center horizontally */
+  align-items: center; /* Center vertically */
+  height: 100vh; /* Ensure the body takes the */
+}
+
+
+.main {
+  text-align: center; /* Center text inside the section */
 }
 
 
 .logo img{
   width: 40%;
-  margin-bottom: 2%;
-  margin-top: 10%;
 
 }
 
@@ -28,7 +35,7 @@ h1 {
 
 
 .nav {
-  padding-top: 20px;
+  /* padding-top: 20px; */
   justify-content: center;
   display: flex; /* Align items in a row */
   gap: 10px; /* Add spacing between items */
@@ -51,9 +58,47 @@ h1 {
   content: ''; /* Removes the separator after the last link */
 }
 
+.top-links .dropdown a::after {
+  content: ''; /* No separator for dropdown links */
+}
+
 .top-links:hover{
   filter: drop-shadow(0 0 10px white);
 }
+
+.top-links a:hover{
+  color: #052047;
+}
+
+ /* Styling for the dropdown menu */
+ .dropdown {
+  padding-top: 20px;
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  z-index: 1;
+  text-align: left;
+}
+
+.dropdown a {
+  padding-top: 5px;
+  color: rgb(255, 255, 255);
+  display: block;
+  /* padding: 10px; */
+  white-space: nowrap;
+  font-size: 20px;
+  text-decoration: none; /* Ensure underline doesn't appear on hover */
+}
+
+/* Show the dropdown menu on hover */
+.top-links:hover .dropdown {
+  display: block;
+}
+
+
+
+/* Optional: some hover effects for dropdown links */
 
 
 .socials {
@@ -76,6 +121,7 @@ h1 {
 
 .socials a:hover {
   filter: drop-shadow(0 0 10px white);
+  color: #052047;
 }
 
 
@@ -133,7 +179,7 @@ h1 {
   }
 
   h1 {
-    font-size: 30px; /* Decrease h1 font size */
+    font-size: 20px; /* Decrease h1 font size */
   }
 
   .top-links a {
