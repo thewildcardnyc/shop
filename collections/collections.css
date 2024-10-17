@@ -1,15 +1,16 @@
 body {
   background-image: url('images/background.jpg'); /* Replace with the actual path to your background image */
-  background-size: 100vw 100vh; /* Set the background image to always cover the viewport */
   background-position: center; /* Center the image */
-  background-repeat: no-repeat; /* Prevent image tiling */
+  background-size: cover; /* Ensure the background covers the whole page */
   background-attachment: fixed; /* Make the background fixed on scroll */
-  color: white; 
-  background-color:#052047;
-  margin: 0;
-  padding: 20px; /* Add padding for spacing */
+  background-repeat: no-repeat; /* Prevent the background from repeating */
+  background-color: #052047; /* Fallback color if the image doesn't load */
+  margin: 0; /* Remove default margin */
+  padding: 20px; /* Optional: Add padding for spacing */
   font-family: monospace;
-  text-align: center; /* Center the h1 text */
+  text-align: center; /* Center the text */
+  color: white; /* Text color */
+  height: 100vh; /* Ensure the body takes up the full viewport height */
 }
 
 .logo img{
