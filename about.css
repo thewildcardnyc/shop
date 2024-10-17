@@ -227,10 +227,20 @@ h1 {
     margin-top: 10%; /* Optional: adjust margin for small screens */
   }
 
+  .dropdown {
+    padding-top: 2px;
+  }
+
 }
 
 /* Tablets (481px to 768px) */
 @media (min-width: 481px) and (max-width: 768px) {
+
+  .dropdown {
+    padding-top: 2px;
+  }
+
+
   .logo img {
     width: 50%; /* Moderate size for tablets */
   }

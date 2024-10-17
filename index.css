@@ -196,6 +196,10 @@ h1 {
     font-size: 10px; /* Decrease font size for copyright links */
   }
 
+  .dropdown {
+    padding-top: 2px;
+  }
+
 }
 
 /* Tablets (481px to 768px) */
@@ -204,6 +208,11 @@ h1 {
     width: 60%; /* Moderate size for tablets */
   }
 
+
+  .dropdown {
+    padding-top: 2px;
+  }
+  
   .items img{
     width: 50%;
   }
