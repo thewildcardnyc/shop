@@ -35,6 +35,7 @@ h1 {
   text-align: left;
   width: 70%; /* Grid width set to 70% of the screen */
   margin: 0 auto; /* Center the grid within its parent (body) */
+  margin-bottom: 10%;
 }
 
 .items img{
