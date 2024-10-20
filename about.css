@@ -192,7 +192,10 @@ h1 {
   .logo{
     margin-top: 10%;
   }
-
+  
+  body {
+    background-image: none; /* Remove background image on smaller screens */
+  }
   .logo img {
     width: 80%; /* Increase logo size for smaller screens */
   }
