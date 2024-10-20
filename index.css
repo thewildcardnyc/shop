@@ -264,38 +264,38 @@ h1 {
 
 @media (max-width: 480px) {
 
-/* Adjust dropdown for mobile */
-.dropdown {
-  padding-top: 0;
-  position: relative; /* Change to relative for mobile */
-  top: auto; /* Remove top positioning for mobile */
-  left: 0; /* Align to the left */
-  width: 100%; /* Ensure the dropdown takes up full width */
-  background-color: #052047; /* Set a background color if needed */
-}
+  /* Adjust dropdown for mobile */
+  .dropdown {
+    padding-top: 0;
+    position: relative; /* Change to relative for mobile */
+    top: auto; /* Remove top positioning for mobile */
+    left: 0; /* Align to the left */
+    width: 100%; /* Ensure the dropdown takes up full width */
+    background-color: #052047; /* Set a background color if needed */
+  }
 
-/* Display dropdown on click */
-.top-links a.dropdown-toggle:focus + .dropdown,
-.top-links a.dropdown-toggle:active + .dropdown {
-  display: block;
-}
+  /* Display dropdown on click */
+  .top-links a.dropdown-toggle:focus + .dropdown,
+  .top-links a.dropdown-toggle:active + .dropdown {
+    display: block;
+  }
 
-/* Reduce spacing inside dropdown links */
-.dropdown a {
-  padding: 10px 0;
-  font-size: 14px; /* Smaller font size for mobile */
-}
+  /* Reduce spacing inside dropdown links */
+  .dropdown a {
+    padding: 10px 0;
+    font-size: 14px; /* Smaller font size for mobile */
+  }
 }
 
 /* Tablets (481px to 768px) */
 @media (min-width: 481px) and (max-width: 768px) {
-.dropdown {
-  padding-top: 2px;
-  position: relative; /* Relative positioning for tablets */
-  top: auto;
-}
+  .dropdown {
+    padding-top: 2px;
+    position: relative; /* Relative positioning for tablets */
+    top: auto;
+  }
 
-.dropdown a {
-  font-size: 15px; /* Moderate font size for tablet */
-}
+  .dropdown a {
+    font-size: 15px; /* Moderate font size for tablet */
+  }
 }

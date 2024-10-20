@@ -220,6 +220,7 @@ h1 {
 
 }
 
+
 /* Tablets (481px to 768px) */
 @media (min-width: 481px) and (max-width: 768px) {
   .logo img {
