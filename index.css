@@ -13,9 +13,7 @@ body {
 }
 
 
-.main {
-  /* text-align: center; Center text inside the section */
-}
+
 
 
 .logo img{
@@ -275,7 +273,7 @@ h1 {
   top: auto; /* Remove top positioning for mobile */
   left: 0; /* Align to the left */
   width: 100%; /* Ensure the dropdown takes up full width */
-  background-color: #052047; /* Set a background color if needed */
+  background-color: #4d6586; /* Set a background color if needed */
 }
 
 /* Display dropdown on click */
