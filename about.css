@@ -184,6 +184,14 @@ h1 {
 }
 
 
+a {
+  color: inherit;
+}
+
+a:hover {
+  filter: drop-shadow(0 0 10px white);
+  color: #052047;
+}
 
 
 /* Mobile Devices (up to 480px) */
