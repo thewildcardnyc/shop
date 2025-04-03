@@ -1,0 +1,352 @@
+body {
+  background-image: url('images/background.jpg'); /* Replace with the actual path to your background image */
+  background-position: center; /* Center the image */
+  background-size: cover; /* Ensure the background covers the whole page */
+  background-attachment: fixed; /* Make the background fixed on scroll */
+  background-repeat: no-repeat; /* Prevent the background from repeating */
+  background-color: #052047; /* Fallback color if the image doesn't load */
+  margin: 0; /* Remove default margin */
+  padding: 20px; /* Optional: Add padding for spacing */
+  font-family: monospace;
+  text-align: center; /* Center the text */
+  color: white; /* Text color */
+  height: 100vh; /* Ensure the body takes up the full viewport height */
+}
+
+.logo img{
+  width: 20%;
+  margin-bottom: 2%;
+  margin-top: 2%;
+}
+
+.logo:hover{
+  filter: drop-shadow(0 0 10px white);
+}
+
+
+h1 {
+  margin-left: 15%;
+  margin-bottom: 20px; /* Add space between the h1 and the grid */
+  font-size: 40px;
+  text-align: left;
+  font-size: 50px;
+}
+
+.description{
+  text-align: left;
+  margin-left: 15%;
+  width: 70%;
+}
+
+.nav {
+  display: flex; /* Align items in a row */
+  gap: 10px; /* Add spacing between items */
+}
+
+.top-links a {
+  color: white;
+  text-decoration: none;
+  font-family: monospace;
+  font-size: 25px;
+  position: relative;
+}
+
+.top-links a::after {
+  content: '|'; /* Adds the separator */
+  margin-left: 10px; /* Space between link and separator */
+}
+
+.top-links:last-child a::after {
+  content: ''; /* Removes the separator after the last link */
+}
+
+.top-links .dropdown a::after {
+  content: ''; /* No separator for dropdown links */
+}
+
+.top-links:hover{
+  filter: drop-shadow(0 0 10px white);
+}
+
+.top-links a:hover{
+  color: #052047;
+}
+
+ /* Styling for the dropdown menu */
+ .dropdown {
+  padding-top: 20px;
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  z-index: 1;
+  text-align: left;
+}
+
+.dropdown a {
+  padding-top: 5px;
+  color: rgb(255, 255, 255);
+  display: block;
+  /* padding: 10px; */
+  white-space: nowrap;
+  font-size: 20px;
+  text-decoration: none; /* Ensure underline doesn't appear on hover */
+}
+
+/* Show the dropdown menu on hover */
+.top-links:hover .dropdown {
+  display: block;
+}
+
+
+
+/* Optional: some hover effects for dropdown links */
+
+
+.socials {
+  font-family: monospace;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  padding: 15px;
+  text-align: left;
+}
+
+.socials a {
+  display: block; /* Make each link take up a full line */
+  color: white;
+  text-decoration: none;
+  padding: 5px;
+  margin-right: 10px;
+  font-size: 16px;
+}
+
+.socials a:hover {
+  filter: drop-shadow(0 0 10px white);
+  color: #052047;
+}
+
+
+.socials img{
+  width: 3%;
+}
+
+
+.copyright {
+  font-family: monospace;
+  position: fixed;
+  bottom: 0;
+  right: 0;
+  padding: 15px;
+}
+
+.copyright a {
+  color: white;
+  text-decoration: none;
+  padding: 5px;
+  margin-right: 10px;
+  font-size: 16px;
+}
+
+
+
+
+
+
+
+
+.video-container {
+  width: 70%;
+  margin: 0 auto; /* Centering the div */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.video-container video {
+  width: 100%; /* Ensures the video scales within the container */
+  height: auto; /* Keeps aspect ratio */
+}
+
+.cold-water-1 {
+  width: 50%;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr); /* 2 columns */
+  gap: 20px; /* Space between grid items */
+  padding-top: 10px;
+  padding-bottom: 10px;
+  margin: 0 auto; /* Centers the grid container */
+
+}
+
+.cold-water-2 {
+  width: 70%;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); /* 3 columns */
+  gap: 100px; /* Space between grid items */
+  padding-bottom: 10px;
+  margin: 0 auto; /* Centers the grid container */
+
+}
+
+.cold-water-gif {
+  width: 90%;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); /* 3 columns */
+  gap: 20px; /* Space between grid items */
+  padding-bottom: 10px;
+  margin: 0 auto; /* Centers the grid container */
+
+}
+
+
+.cold-gif {
+  position: relative;
+  /* overflow: hidden; */
+  /* aspect-ratio: 1;  */
+}
+
+.cold-gif img {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+}
+
+.cold-item {
+  position: relative;
+  /* overflow: hidden; */
+  /* aspect-ratio: 1;  */
+}
+
+.cold-item img {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+}
+
+.cold-item .overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(#013d92); /* Semi-transparent black background */
+  color: white;
+  display: flex; /* Enable flexbox */
+  justify-content: center; /* Horizontally center the text */
+  align-items: center; /* Vertically center the text */
+  opacity: 0; /* Hidden by default */
+  font-family: monospace;
+  font-size: 12px;
+  text-align: center; /* Center text alignment */
+  padding: 20px;
+}
+
+.cold-item:hover img {
+  opacity: 0.8; /* Lower opacity on hover */
+  filter: drop-shadow(0 0 10px white);
+}
+
+.cold-item:hover .overlay {
+  opacity: 1; /* Show the text description on hover */
+}
+
+
+
+
+
+/* Mobile Devices (up to 480px) */
+@media (max-width: 480px) {
+
+  .logo{
+    margin-top: 10%;
+  }
+
+  body {
+    background-image: none; /* Remove background image on smaller screens */
+  }
+
+  .logo img {
+    width: 80%; /* Increase logo size for smaller screens */
+  }
+
+  h1 {
+    font-size: 30px; /* Decrease h1 font size */
+  }
+
+  .top-links a {
+    font-size: 14px; /* Decrease font size for top links */
+  }
+
+  .socials a {
+    font-size: 10px; /* Decrease font size for social links */
+  }
+
+  .copyright a {
+    font-size: 10px; /* Decrease font size for copyright links */
+  }
+
+
+}
+
+/* Tablets (481px to 768px) */
+@media (min-width: 481px) and (max-width: 768px) {
+  .logo img {
+    width: 80%; /* Moderate size for tablets */
+  }
+
+  h1 {
+    font-size: 40px; /* Moderate h1 font size */
+  }
+
+  .top-links a {
+    font-size: 15px; /* Moderate font size for top links */
+  }
+
+  .socials a {
+    font-size: 15px; /* Moderate font size for social links */
+  }
+
+  .copyright a {
+    font-size: 15px; /* Moderate font size for copyright links */
+  }
+}
+
+
+@media (max-width: 480px) {
+
+  /* Adjust dropdown for mobile */
+  .dropdown {
+    padding-top: 0;
+    position: relative; /* Change to relative for mobile */
+    top: auto; /* Remove top positioning for mobile */
+    left: 0; /* Align to the left */
+    width: 100%; /* Ensure the dropdown takes up full width */
+    background-color: #545c67; /* Set a background color if needed */
+  }
+
+  /* Display dropdown on click */
+  .top-links a.dropdown-toggle:focus + .dropdown,
+  .top-links a.dropdown-toggle:active + .dropdown {
+    display: block;
+  }
+
+  /* Reduce spacing inside dropdown links */
+  .dropdown a {
+    padding: 10px 0;
+    font-size: 14px; /* Smaller font size for mobile */
+  }
+}
+
+/* Tablets (481px to 768px) */
+@media (min-width: 481px) and (max-width: 768px) {
+  .dropdown {
+    padding-top: 2px;
+    position: relative; /* Relative positioning for tablets */
+    top: auto;
+  }
+
+  .dropdown a {
+    font-size: 15px; /* Moderate font size for tablet */
+  }
+}

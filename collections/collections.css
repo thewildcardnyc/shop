@@ -204,14 +204,36 @@ h1 {
 }
 
 
+.video-container {
+  width: 70%;
+  margin: 0 auto; /* Centering the div */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
 
+.video-container video {
+  width: 100%; /* Ensures the video scales within the container */
+  height: auto; /* Keeps aspect ratio */
+}
 
-.cold-water {
+.cold-water-1 {
+  margin-left: 15%;
+  width: 70%;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr); /* 3 columns */
+  gap: 20px; /* Space between grid items */
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+.cold-water-2 {
   margin-left: 15%;
   width: 70%;
   display: grid;
   grid-template-columns: repeat(3, 1fr); /* 3 columns */
   gap: 20px; /* Space between grid items */
+  padding-bottom: 10px;
 }
 
 .cold-item {
